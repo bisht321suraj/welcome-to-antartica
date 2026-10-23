@@ -72,7 +72,11 @@ main{
     grid-template-columns: 50% 50%;
     padding: 20px 150px;
     
-
+}
+.wildlife-layout{
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+ 
 }
 .fact-card{
     display: flex;
@@ -120,7 +124,44 @@ main{
     display: none;
    
 }
-
+.wildlife{
+    background-image: url(./assets/antarctic-penguins.jpg);
+   
+   
+}
+.climate{
+    background-image: url(./assets/antarctic-daytime.jpg);
+}
+.penguine{
+    background-image: url(./assets/wildlife-emperor-penguin.jpg);
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.krill{
+    background-image: url(./assets/wildlife-krill.jpg);
+}
+.seal{
+    background-image: url(./assets/wildlife-seal.jpg);
+}
+.orca{
+    background-image: url(./assets/wildlife-orca.jpg);
+   
+   grid-column-start: 1;
+  grid-column-end: 3;
+    
+}
+.climate-ice{
+  background-image: url(./assets/climate-snow.jpg);
+}
+.climate-sun{
+    background-image: url(./assets/climate-sun.jpg);
+}
+.climate-snow{
+      background-image: url(./assets/climate-ice.jpg);
+}
+.climate-rain{
+    background-image: url(./assets/climate-rain.jpg);
+}
 @media(max-width:768px){
     nav{
         position: relative;
@@ -151,6 +192,13 @@ main{
         padding: 20px;
         height: 100vh;
     }
+    
+     .penguine{
+grid-row: auto;
+     }
+     .orca{
+        grid-column: auto;
+     }
 
  .fact{
     font-size: 14px;
